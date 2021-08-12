@@ -1,0 +1,26 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.leshouches.fr/wp-content/uploads/2015/10/cin%C3%A9ma.jpg);">
+  <div class="container">
+    <h1>Welcome to your <strong>cinema</strong> !</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card-trip">
+    <% @lists.each do |list| %>
+      <div class="list">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div class="card-product-infos">
+            <p> <%= link_to list.name, list_path(list) %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+
+<%= link_to "Add list", new_list_path %>
