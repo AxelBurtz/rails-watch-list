@@ -39,7 +39,10 @@
 
 .card-trip {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  justify-items: center;
+  grid-gap: 15px;
 }
 
 .list {
@@ -47,4 +50,5 @@
   img {
     height:200px;
   }
+  padding: 20px;
 }
